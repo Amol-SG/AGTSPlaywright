@@ -58,7 +58,7 @@ console.log(lang); // it prints the Java bcoz it ovverrides the value of global 
 let langg="python" // global variable
 
 if(true){
-    let langg="java"; // local variable
+  //  let langg="java"; // local variable its scope will be in block only
 }
 console.log(langg); // it prints the Java bcoz it ovverrides the value of global variable, So thats why Var is not recomended to use
 
