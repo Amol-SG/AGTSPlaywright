@@ -75,8 +75,9 @@
         //and if u do again printing operation the output willl be 4
          console.log("q is :",q--); //4
 
- console.log("***********************************************************************************"); 
-//******************************************************************************************************************* 
+ console.log("*******************************************************************"); 
+
+//******************************************************************************************** 
  
 //2. Comparison operators - used to compare two values and reutrns the results in the form of true/false
 /* 1.equal TO (==)
@@ -128,5 +129,46 @@ console.log(3<=5) // true
 // greater than equal to 
 console.log(3>=5) // false
 
+console.log("*********************************************");
 
 //4. Logical operators
+// validate two diff conditions and then rreutnrs the value in form of bolean(True/False)
+
+  //1.AND (&&)
+
+  //true && true - true 
+  //true && false - false 
+  //false && true - false 
+  // false && false - false
+
+  console.log("AND (&&)", (10>7)&& (9>5)); // true
+  console.log("AND (&&)", (10>7)&& (9<5)); // false
+  console.log("AND (&&)", (10<7)&& (9<5)); // true
+  console.log("AND (&&)", (10>700)&& (9>50)); // true
+
+
+  //1.OR (||)
+
+  //true && true - true 
+  //true && false - true 
+  //false && true - true 
+  // false && false - true
+  console.log("OR (||)", (10>7) || (9>5)); // true
+  console.log("OR (||) ",(10>7) || (9<5)); // false
+  console.log("OR (||)", (10<70) || (90<5)); // true
+  console.log("OR (||)", (10<7) || (9<5)); // true
+
+  //NOT(!) - if u dont know that how many times we need to scroll down to the page
+  console.log("Not(!)", !(10>45)) //False ==>True (output)
+
+//4. Assignment Operators (=) = used to assign the value to variable
+let i=10;
+i=i+4; //10+4 = 14
+i +=5; //14+5 = 19
+
+console.log(i)
+
+i *= 5 //i = i*5
+i -= 5 //i = i-5
+i /= 5 //i = i/5
+i += 5 //i = i+5
