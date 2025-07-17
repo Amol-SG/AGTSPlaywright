@@ -83,6 +83,8 @@ console.log(result);
 
 //2. Anonymous function  = Storing the function inside the variable and call the function using variable name 
 
+// if u want to the function to be used only once 
+
 // below const fun is variable 
 /*
 Syntax
@@ -107,7 +109,7 @@ console.log(a+b);
 addition(3, 2);
 
 /*
-// 4.  Arrow Function (Lambda function)
+// 4.  Arrow Function (Lambda function) - it is used to shorten the code
 
 syntax 
 
@@ -119,3 +121,103 @@ syntax
   let Sum=(a,b) => a+b;
   let sumresults=Sum(44,44)
 console.log(sumresults);
+
+
+//Contstructor function -
+
+
+
+// IIFE -
+
+(function (){
+
+  console.log("Server is up and runnnig ");
+  
+})
+//Calling IIFE funcs
+()
+
+// Example
+
+ var cnt=0;
+
+ function increase(){
+
+  cnt++;
+  console.log(cnt);
+ }
+
+ increase();
+
+ (function(){
+
+  var count=10;
+
+  function increase(){
+
+    console.log(count);
+    
+  }
+ })
+
+ ()
+
+
+
+/*
+ // Default paramter and optional paramter
+ using default parameter we can achive method ovverloading 
+ i.e. same function with different paramters
+
+ */
+ function a(name1: String ="Amol"){
+
+  console.log(name1);
+  
+ }
+
+ a();
+
+
+function a1(a,b,c=20){
+
+  console.log(a+b+c);
+  
+ }
+
+ a1(10,20);
+
+
+ function info(name, age?){
+  if(age!==undefined){
+    console.log(`your name is=${name} and age if = ${age}`);
+  }
+  else
+  console.log(`your name is=${name}`);
+}
+
+ info("javascript");  //your name is=javascript
+ info("javascript",21); //your name is=javascript and age if = 21
+
+
+ // Rest paramters (...)
+
+ function addition2(...num ) // here this num can accept any kind and any number of paramters
+ {
+  console.log(num);
+  
+
+ }
+
+ addition2(10,20,30,"TS"); //[ 10, 20, 30, 'TS' ]
+ addition2(10,20,30,40,50,60); // [10, 20, 30, 40, 50, 60 ]
+
+
+console.log("**************************************************************");
+
+ ///Array in Typescript
+ // Start working on Coding questions given in Drive 
+ 
+
+
+
